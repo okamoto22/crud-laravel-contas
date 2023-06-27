@@ -20,6 +20,9 @@
                         <th>
                             Descrição
                         </th>
+                        <th>
+                            Tipo da Transação
+                        </th>
                         
                         <th>
                         Editar
@@ -43,6 +46,9 @@
                         </td>
                         <td>
                             {{ $conta -> descricao }}
+                        </td>
+                        <td>
+                            {{ $conta -> tipo }}
                         </td>
                         
                         <td>

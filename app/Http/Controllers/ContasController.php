@@ -36,11 +36,13 @@ class ContasController extends Controller
         $this->validate($request, [
             'nome' => 'required',
             'descricao' => 'required',
+            'tipo' => 'required',
         ]);
         
         $contas = new Contas;
         $contas->nome = $request->nome;
         $contas->descricao = $request->descricao;
+        $contas->tipo = $request->tipo;
         $contas->save();
         return redirect('contas')->with('message', 'Conta atualizada com sucesso!');
         
@@ -85,11 +87,13 @@ class ContasController extends Controller
         $this->validate($request, [
             'nome' => 'required',
             'descricao' => 'required',
+            'tipo' => 'required',
         ]);
         
         $contas = Contas::find($id);
         $contas->nome = $request->nome;
         $contas->descricao = $request->descricao;
+        $contas->tipo = $request->tipo;
         $contas->save();
         return redirect('contas')->with('message', 'Conta editada com sucesso!');
     }

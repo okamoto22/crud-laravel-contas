@@ -10,6 +10,9 @@
 			<p>
 				{{ $detailpage->descricao }}
 			</p>
+			<p>
+				{{ $detailpage->tipo }}
+			</p>
 			<a href="/contas">Voltar</a>
 		</div>
 	</div>
