@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProdutosTable extends Migration
+class CreateContasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -19,6 +19,7 @@ class CreateProdutosTable extends Migration
             $table->text('nome');
             $table->text('descricao');
             $table->text('tipo');
+            $table->number_form('saldo');
         });
     }
 

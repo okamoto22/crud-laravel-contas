@@ -13,6 +13,9 @@
 			<p>
 				{{ $detailpage->tipo }}
 			</p>
+			<p>
+				{{ $detailpage->saldo }}
+			</p>
 			<a href="/contas">Voltar</a>
 		</div>
 	</div>

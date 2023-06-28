@@ -12,6 +12,8 @@
 				{{ ($errors->has('descricao')) ? $errors->first('descricao') : '' }}<br>
 				<input type="text" name="tipo" value="{{ $detailpage->tipo }}" placeholder="Tipo da Transação">
 				{{ ($errors->has('tipo')) ? $errors->first('tipo') : '' }}<br>
+				<input type="number" name="saldo" value="{{ $detailpage->saldo }}" placeholder="Saldo da Transação">
+				{{ ($errors->has('saldo')) ? $errors->first('saldo') : '' }}<br>
 				<input type="hidden" name="_method" value="put">
 				<input type="hidden" name="_token" value="{{ csrf_token() }}">
 				<input type="submit" name="name" value="Salvar">

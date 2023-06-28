@@ -37,12 +37,14 @@ class ContasController extends Controller
             'nome' => 'required',
             'descricao' => 'required',
             'tipo' => 'required',
+            'saldo' => 'required',
         ]);
         
         $contas = new Contas;
         $contas->nome = $request->nome;
         $contas->descricao = $request->descricao;
         $contas->tipo = $request->tipo;
+        $contas->saldo = $request->saldo;
         $contas->save();
         return redirect('contas')->with('message', 'Conta atualizada com sucesso!');
         
@@ -88,12 +90,14 @@ class ContasController extends Controller
             'nome' => 'required',
             'descricao' => 'required',
             'tipo' => 'required',
+            'saldo' => 'required',
         ]);
         
         $contas = Contas::find($id);
         $contas->nome = $request->nome;
         $contas->descricao = $request->descricao;
         $contas->tipo = $request->tipo;
+        $contas->saldo = $request->saldo;
         $contas->save();
         return redirect('contas')->with('message', 'Conta editada com sucesso!');
     }

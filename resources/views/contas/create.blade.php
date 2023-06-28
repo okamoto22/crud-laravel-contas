@@ -26,6 +26,13 @@
 						<span class="help-block">{{ ($errors->has('tipo')) ? $errors->first('tipo') : '' }}</span>  
 					</div>
 				</div>
+				<div class="form-group">					
+					<div class="col-md-12">
+						<label for="saldo">Saldo da Transação</label>
+						<input id="saldo" name="saldo" type="number" placeholder="e.g 5.39" step="0.01" class="form-control input-md" required>
+						<span class="help-block">{{ ($errors->has('tipo')) ? $errors->first('tipo') : '' }}</span>  
+					</div>
+				</div>
 				<p><br>
 					<br>
 				</p>				

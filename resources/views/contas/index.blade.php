@@ -23,6 +23,9 @@
                         <th>
                             Tipo da Transação
                         </th>
+                        <th>
+                            Saldo da Transação
+                        </th>
                         
                         <th>
                         Editar
@@ -49,6 +52,9 @@
                         </td>
                         <td>
                             {{ $conta -> tipo }}
+                        </td>
+                        <td>
+                            {{ $conta -> saldo }}
                         </td>
                         
                         <td>
